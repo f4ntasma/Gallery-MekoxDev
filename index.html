@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio de Angel Vasquez, desarrollador web y hacker ético. Explora mis proyectos, habilidades y experiencia en ciberseguridad.">
+    <title>GHOSTCH4N</title>
+    <link rel="icon" href="https://png.pngtree.com/png-clipart/20241129/original/pngtree-ghost-icon-png-image_17406562.png" type="#">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Rajdhani:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> 
+</head>
+<body>
+    <!-- Loader Épico -->
+    <div id="loader" class="loader">
+        <div class="loader-content">
+            <div class="cyber-logo">☠️</div>
+            <div class="glitch-text" data-text="Welcome to GhostCh4n">Welcome to GhostCh4n</div>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
+            <div class="loading-percentage">0%</div>
+        </div>
+        <div class="matrix-bg"></div>
+    </div>
+
+    <!-- Cursor Personalizado -->
+    <div id="cursor" class="cursor"></div>
+    <div id="cursor-trail" class="cursor-trail"></div>
+
+    <!-- Partículas de Fondo -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- Navegación -->
+    <nav class="navbar">
+        <div class="nav-brand">
+            <span class="cyber-text">GHOSTCH4N</span>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#home" class="nav-link">INICIO</a></li>
+            <li><a href="#about" class="nav-link">SOBRE MÍ</a></li>
+            <li><a href="#projects" class="nav-link">PROYECTOS</a></li>
+            <li><a href="#experience" class="nav-link">EXPERIENCIA</a></li>
+            <li><a href="#contact" class="nav-link">CONTACTO</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="glitch-text" data-text="ANGEL VASQUEZ">ANGEL VASQUEZ</span>
+                </h1>
+                <h2 class="hero-subtitle">
+                    <span class="cyber-text">DEVELOPER</span>
+                </h2>
+                <p class="hero-description">
+                    Creando experiencias digitales que desafían la realidad con código cuántico y diseño interdimensional
+                </p>
+                <div class="hero-buttons">
+    <button class="btn btn-primary" data-target="#projects">
+        <i class="fas fa-rocket"></i>
+        EXPLORAR PROYECTOS
+    </button>
+    <a class="btn btn-secondary" href="https://drive.google.com/file/d/15bT33Opqtu-etK4voozifVJGE0IyK4uL/view?usp=sharing" target="_blank" rel="noopener">
+        <i class="fas fa-bolt"></i>
+        DESCARGAR CV
+    </a>
+</div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-shapes">
+                    <div class="shape shape-1"></div>
+                    <div class="shape shape-2"></div>
+                    <div class="shape shape-3"></div>
+                </div>
+                <div class="hologram-effect"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="SOBRE GHOST">SOBRE GHOST</span>
+            </h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3 class="cyber-text">DESARROLLADOR WEB Y HACKER ÉTICO</h3>
+                    <p>
+                        ¡Hola! Soy un apasionado desarrollador y hacker ético con experiencia en ciberseguridad y OSINT.
+                        Me especializo en encontrar vulnerabilidades y desarrollar soluciones seguras.
+                    </p>
+                    <p>
+                        Mi enfoque combina creatividad técnica con un profundo entendimiento de la seguridad informática,
+                        permitiéndome construir aplicaciones robustas mientras mantengo una mentalidad de hacker.
+                    </p>
+
+                    <div class="skills-grid">
+                        <div class="skill-item" data-skill="JavaScript">
+                            <div class="skill-icon"><i class="fab fa-js-square"></i></div>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-item" data-skill="Python">
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-item" data-skill="React">
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-item" data-skill="Node.js">
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-item" data-skill="PHP">
+                        <div class="skill-icon"><i class="fab fa-php"></i></div>
+                        <span>PHP</span>
+                        </div>
+                        <div class="skill-item" data-skill="Bash">
+                        <div class="skill-icon"><i class="fas fa-terminal"></i></div>
+                        <span>Bash</span>
+                        </div>
+                        <div class="skill-item" data-skill="Blockchain">
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-item" data-skill="MySQL">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <span>MySQL</span>
+                       </div>
+                       <div class="skill-item" data-skill="MongoDB">
+                        <div class="skill-icon"><i class="fas fa-database"></i></div>
+                        <span>MongoDB</span>  
+                        </div>
+                        <div class="skill-item" data-skill="Docker">
+                            <div class="skill-icon"><i class="fab fa-docker"></i></div>
+                            <span>Docker</span>
+                        </div>
+                        <div class="skill-item" data-skill="WordPresss">
+                            <div class="skill-icon"><i class="fab fa-wordpress"></i></div>
+                            <span>WordPress</span>  
+                    </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/f4ntasma" class="social-link" data-platform="github">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/angel-vasquez-725a59312/" class="social-link" data-platform="linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@ghost_zzz03" class="social-link" data-platform="twitter">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.instagram.com/angel_low03/" class="social-link" data-platform="instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+
+                        <script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support me on Ko-fi', '#72a4f2', 'L3L21F6KHV');kofiwidget2.draw();</script> 
+
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="avatar-container">
+                        <div class="avatar-glow"></div>
+                        <div class="avatar">
+                            <img src="yo.jpeg" alt="Avatar" id="avatar-img">
+                        </div>
+                        <div class="avatar-rings">
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="PROYECTOS GITHUB">PROYECTOS GITHUB</span>
+            </h2>
+            <div class="timeline">
+                <div class="timeline-line"></div>
+                <div class="timeline-item" data-year="2024">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">☠️</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Hacker Ético</h3>
+                        <h4>Vulnerability Scanner</h4>
+                        <p>Herramienta automatizada para detectar vulnerabilidades en aplicaciones web.</p>
+                        <div class="timeline-tech">
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2023">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">⚡</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador Full Stack</h3>
+                        <h4>Dashboard Analytics</h4>
+                        <p>Panel de control para visualización de datos con autenticación segura.</p>
+                        <div class="timeline-tech">
+                            <span>React</span>
+                            <span>Node.js</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline-item" data-year="2022">
+                    <div class="timeline-marker">
+                        <div class="marker-icon">🔮</div>
+                    </div>
+                    <div class="timeline-content">
+                        <h3>Desarrollador</h3>
+                        <h4>Secure Chat App</h4>
+                        <p>Aplicación de chat con cifrado de extremo a extremo y autodestrucción de mensajes.</p>
+                        <div class="timeline-tech">
+                            <span>JavaScript</span>
+                            <span>Rust</span>
+                            <span>C++</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="PROYECTOS ÉPICOS">PROYECTOS ÉPICOS</span>
+            </h2>
+            <div class="projects-grid">
+                <div class="project-card" data-project="1">
+                    <div class="project-image">
+                        <img src="goti.jpg" alt="Cyber Commerce">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/f4ntasma/Administracion-Empresa" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://administracion-empresa.vercel.app/" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Sistema Economico</h3>
+                        <p>Este sistema de Administración Economica, busca que la empresa pueda gestionar, sus ingresos, egresos, tranferencias o inversiones, así mismo poder mejorar la gestion de su economia.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>Three.js</span>
+                            <span>AI</span>
+                            <span>WebXR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="2">
+                    <div class="project-image">
+                        <img src="goti.jpg" alt="Neural Dashboard">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NEURAL DASHBOARD</h3>
+                        <p>Dashboard con visualizaciones 3D y análisis predictivo en tiempo real</p>
+                        <div class="project-tech">
+                            <span>Next.js</span>
+                            <span>D3.js</span>
+                            <span>TensorFlow</span>
+                            <span>WebGL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="3">
+                    <div class="project-image">
+                        <img src="goti.jpg" alt="Quantum App">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>QUANTUM APP</h3>
+                        <p>App móvil con efectos cuánticos y sincronización multidimensional</p>
+                        <div class="project-tech">
+                            <span>React Native</span>
+                            <span>Quantum.js</span>
+                            <span>Blockchain</span>
+                            <span>AR</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="4">
+                    <div class="project-image">
+                        <img src="goti.jpg" alt="AI Assistant">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AI ASSISTANT</h3>
+                        <p>Asistente virtual con procesamiento de lenguaje natural avanzado</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>NLP</span>
+                            <span>FastAPI</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="5">
+                    <div class="project-image">
+                        <img src="goti.jpg" alt="Blockchain DApp">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>BLOCKCHAIN DAPP</h3>
+                        <p>Aplicación descentralizada para trading de NFTs y criptomonedas</p>
+                        <div class="project-tech">
+                            <span>Solidity</span>
+                            <span>Web3.js</span>
+                            <span>Ethereum</span>
+                            <span>IPFS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-project="6">
+                    <div class="project-image">
+                        <img src="goti.jpg" alt="VR Experience">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>VR EXPERIENCE</h3>
+                        <p>Experiencia inmersiva de realidad virtual para educación</p>
+                        <div class="project-tech">
+                            <span>A-Frame</span>
+                            <span>WebXR</span>
+                            <span>Three.js</span>
+                            <span>Unity</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="glitch-text" data-text="¿LISTO PARA EMPEZAR?">¿LISTO PARA EMPEZAR?</span>
+            </h2>
+            <p class="contact-subtitle">Contactemos y creemos algo que rompa la matrix</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>empoderati03@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Teléfono</h3>
+                            <p>+51 929 411 405</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Ubicación</h3>
+                            <p>Chiclayo, Perú</p>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" required>
+                        <label for="subject">Asunto</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" required></textarea>
+                        <label for="message">Mensaje</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>
+                        INICIAR PROYECTO
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>© 2025 Ghost☕💗. Todos los derechos reservados.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/f4ntasma" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/angel-vasquez-725a59312/" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.tiktok.com/@ghost_zzz03" class="social-link">
+                        <i class="fab fa-tiktok"></i>
+                    </a>
+                    <a href="https://www.instagram.com/angel_low03/" class="social-link">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
